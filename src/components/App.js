@@ -29,7 +29,7 @@ function App() {
         onSelectCategory={setSelectedCategory}
       />
       <NewTaskForm categories={CATEGORIES} onTaskFormSubmit={handleTaskFormSubmit} />
-      <TaskList tasks={visibleTasks} />
+      <TaskList tasks={visibleTasks} onDeleteTask={handleDeleteTask} />
     </div>
   );
 }
